@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100;400;600;800&display=swap');
+
+/* --------------------
+COMMON
+-------------------- */
+*{
+    font-family: 'M PLUS 1', sans-serif;
+}
+body{
+    margin: 0;
+}
+
+
+
+/* --------------------
+KV
+-------------------- */
+.container{
+    margin: 0 20px;
+}
+.kv{
+    position: relative;
+    max-width: 1250px;
+    width: 100%;
+    min-height: 800px;
+    height: 100%;
+    margin: 0 auto;
+
+}
+.kv-title{
+    max-width: 600px;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    left:0; 
+    top: 30%;
+
+}
+.kv-title .img{
+    max-width: 150px;
+    width: 100%;
+    margin-bottom: 10px;
+    display: block;
+}
+.kv-title .title{
+    max-width: 600px;
+    width: 100%;
+}
+.kv-title p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.kv-pc{
+    max-width: 1100px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+.kv-m{
+    display: none;
+}
+@media screen and (max-width: 1024px) {
+   .kv .kv-pc{
+    display: none;
+   }
+   .kv-title{
+    position: relative;
+    display: block;
+    margin: auto;
+    transform: translateY(10%);
+   }
+
+    .kv-m{
+     display: block;
+     max-width: 500px;
+     width: 100%;
+     margin: auto;
+     padding-top: 40px;
+   }
+}
+
+/* --------------------
+INTRO
+-------------------- */
+.intro{
+    position: relative;
+    min-height: 500px;
+    height: 100%;
+    margin: 100px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.intro-text{
+    max-width: 760px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    z-index: 1000;
+    top: 20%;
+}
+
+.intro03{
+    max-width: 760px;
+    width: 100%;
+}
+.intro02{
+    max-width: 660px;
+    width: 100%;
+    margin-bottom: 6px;
+}
+.intro01{
+    max-width: 560px;
+    width: 100%;
+    margin-bottom: 6px;
+}
+.intro-vid > img{
+   position: absolute;
+   right: 0;
+   max-width: 850px;
+   width: 100%;
+   opacity: 80%;
+   border-bottom-left-radius: 20px;
+   border-top-left-radius: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .intro-text{
+        top: 10%;
+    }
+    .intro-vid > img{
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .intro-text{
+        display: block;
+        position: relative;
+    }
+    .intro-vid > img{
+        max-width: 960px;
+        position: relative;
+        margin-top: 40px;
+    }
+@media screen and (max-width: 768px){
+    .intro-text{
+        max-width: 400px;
+    }
+    .intro03{
+        max-width: 375px;
+        width: 100%;
+    }
+    .intro02{
+        max-width: 320px;
+        width: 100%;
+        margin-bottom: 6px;
+    }
+    .intro01{
+        max-width: 300px;
+        width: 100%;
+        margin-bottom: 6px;
+    }
+}
+}
+/* --------------------
+PRODUCT
+-------------------- */
+.product{
+    max-width: 1920px;
+    width: 100%;
+    background-image: url(../img/product-bg.png);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100% 100%; 
+    min-height: 1200px;
+}
+.product > .container {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+.product h1{
+    text-align: center;
+    font-weight: 800;
+}
+
+.product-box{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.product-box > img{
+    max-width: 350px;
+    width: 100%;
+}
+.product-table > h4{
+    font-weight: 600;
+    color: #295181;
+}
+
+.product-table{
+    padding: 40px;
+    padding-left: 60px;
+    max-width: 250px;
+    width: 100%;
+}
+
+.product-table table{
+    border-collapse: collapse;
+    max-width: 250px;
+    width: 100%;
+}
+
+.product-box tr{
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+.product-box td{
+    padding: 6px 0;
+}
+
+.product-box .td-right{
+    color: #295181;
+}
+.product-box .td-left{
+    padding-left: 20px;
+}
+
+
+
+
+@media screen and (max-width: 1440px) {
+    .product{
+        max-width: 1440px;
+    }    
+}
+@media screen and (max-width: 960px) {
+    .product{
+        background-image: url(../img/product-bg-m.png);
+        max-width: 9960px;
+    }    
+}
+@media screen and (max-width: 960px) {
+    .product{
+        background-image: none;
+        max-width: 9960px;
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .product-box > img{
+        width: 300px;
+    }
+}
+
+
